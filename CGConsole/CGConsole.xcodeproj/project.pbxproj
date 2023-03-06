@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C580FEE29B4E355004BF1DB /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C580FED29B4E355004BF1DB /* Vector3.swift */; };
+		9C580FF029B4EAA3004BF1DB /* Point3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C580FEF29B4EAA3004BF1DB /* Point3.swift */; };
+		9C580FF329B4EEA3004BF1DB /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C580FF229B4EEA3004BF1DB /* Sphere.swift */; };
+		9C580FF529B4F036004BF1DB /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C580FF429B4F036004BF1DB /* Camera.swift */; };
+		9C580FF729B4F06C004BF1DB /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C580FF629B4F06C004BF1DB /* Ray.swift */; };
 		9C849EE929AD52D00042DBF2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C849EE829AD52D00042DBF2 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +28,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C580FED29B4E355004BF1DB /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		9C580FEF29B4EAA3004BF1DB /* Point3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point3.swift; sourceTree = "<group>"; };
+		9C580FF229B4EEA3004BF1DB /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
+		9C580FF429B4F036004BF1DB /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		9C580FF629B4F06C004BF1DB /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
 		9C849EE529AD52D00042DBF2 /* CGConsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CGConsole; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C849EE829AD52D00042DBF2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,9 +48,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C580FEB29B4E330004BF1DB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9C580FF129B4EE87004BF1DB /* Objects */,
+				9C580FEC29B4E33F004BF1DB /* Structures */,
+				9C580FF429B4F036004BF1DB /* Camera.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9C580FEC29B4E33F004BF1DB /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				9C580FED29B4E355004BF1DB /* Vector3.swift */,
+				9C580FEF29B4EAA3004BF1DB /* Point3.swift */,
+				9C580FF629B4F06C004BF1DB /* Ray.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		9C580FF129B4EE87004BF1DB /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				9C580FF229B4EEA3004BF1DB /* Sphere.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		9C849EDC29AD52D00042DBF2 = {
 			isa = PBXGroup;
 			children = (
+				9C580FEB29B4E330004BF1DB /* Core */,
 				9C849EE729AD52D00042DBF2 /* CGConsole */,
 				9C849EE629AD52D00042DBF2 /* Products */,
 			);
@@ -120,6 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C580FEE29B4E355004BF1DB /* Vector3.swift in Sources */,
+				9C580FF529B4F036004BF1DB /* Camera.swift in Sources */,
+				9C580FF729B4F06C004BF1DB /* Ray.swift in Sources */,
+				9C580FF029B4EAA3004BF1DB /* Point3.swift in Sources */,
+				9C580FF329B4EEA3004BF1DB /* Sphere.swift in Sources */,
 				9C849EE929AD52D00042DBF2 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
