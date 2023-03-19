@@ -7,23 +7,23 @@
 
 import Foundation
 
-struct Ray {
+public struct Ray {
     
     //MARK: - Properties
     
-    var origin: Vector3
-    var direction: Vector3
+    public var origin: Vector3
+    public var direction: Vector3
     
     //MARK: - Initialization
     
-    init(origin: Vector3, direction: Vector3) {
+    public init(origin: Vector3, direction: Vector3) {
         self.origin = origin
         self.direction = direction
     }
     
     //MARK: - Public methods
     
-    func pointAt(t: Float) -> Vector3 {
+    public func pointAt(t: Float = 1) -> Vector3 {
         return origin + direction * t
     }
 }
