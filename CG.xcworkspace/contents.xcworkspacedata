@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CGConsole/CGConsole.xcodeproj">
+      location = "group:/Users/bohdankonopolskyi/Xcode/CG23/Core/CGCore.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CGCore/CGCore.xcodeproj">
+      location = "group:CGConsole/CGConsole.xcodeproj">
    </FileRef>
 </Workspace>

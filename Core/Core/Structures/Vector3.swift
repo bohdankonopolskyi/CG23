@@ -1,36 +1,45 @@
 //
 //  Vector3.swift
-//  CGConsole
+//  Core
 //
-//  Created by Богдан Конопольський on 05.03.2023.
+//  Created by Богдан Конопольський on 19.03.2023.
 //
 
 import Foundation
 
-struct Vector3 {
+public struct Vector3 {
     
     //MARK: - Properties
     
-    var x: Float
-    var y: Float
-    var z: Float
+    public var x: Float
+    public var y: Float
+    public var z: Float
     
-    var length: Float {
+    public var length: Float {
         return sqrt(x * x + y * y + z * z)
     }
     
-    var lengthSquared: Float {
+    public var lengthSquared: Float {
         return x * x + y * y + z * z
     }
     
     //MARK: - Initialization
     
-    init(x: Float, y: Float, z: Float) {
+    public  init(x: Float, y: Float, z: Float) {
         self.x = x
         self.y = y
         self.z = z
     }
     
+    public init(start: Point3, end: Point3) {
+        self.x = end.x - start.x
+        self.y = end.y - start.y
+        self.z = end.z - start.z
+    }
+}
+
+public extension Vector3
+{
     //MARK: - Public methods
     
     func normalized() -> Vector3 {
@@ -67,3 +76,4 @@ struct Vector3 {
         return Vector3(x: lhs.x / rhs, y: lhs.y / rhs, z: lhs.z / rhs)
     }
 }
+

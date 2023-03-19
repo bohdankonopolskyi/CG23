@@ -1,29 +1,31 @@
 //
 //  Point3.swift
-//  CGConsole
+//  Core
 //
-//  Created by Богдан Конопольський on 05.03.2023.
+//  Created by Богдан Конопольський on 19.03.2023.
 //
 
 import Foundation
 
-struct Point3 {
+public struct Point3 {
     
     //MARK: - Properties
     
-    var x: Float
-    var y: Float
-    var z: Float
+    public var x: Float
+    public var y: Float
+    public var z: Float
     
     //MARK: - Initialization
     
-    init(x: Float, y: Float, z: Float) {
+    public init(x: Float, y: Float, z: Float) {
         self.x = x
         self.y = y
         self.z = z
     }
-    
-    //MARK: - Operators
+}
+//MARK: - Operators
+
+public extension Point3 {
     
     static func +(lhs: Point3, rhs: Vector3) -> Point3 {
         return Point3(x: lhs.x + rhs.x, y: lhs.y + rhs.y, z: lhs.z + rhs.z)

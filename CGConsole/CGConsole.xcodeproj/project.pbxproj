@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C580FEE29B4E355004BF1DB /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C580FED29B4E355004BF1DB /* Vector3.swift */; };
-		9C580FF029B4EAA3004BF1DB /* Point3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C580FEF29B4EAA3004BF1DB /* Point3.swift */; };
-		9C580FF329B4EEA3004BF1DB /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C580FF229B4EEA3004BF1DB /* Sphere.swift */; };
-		9C580FF529B4F036004BF1DB /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C580FF429B4F036004BF1DB /* Camera.swift */; };
-		9C580FF729B4F06C004BF1DB /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C580FF629B4F06C004BF1DB /* Ray.swift */; };
-		9C849EE929AD52D00042DBF2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C849EE829AD52D00042DBF2 /* main.swift */; };
+		9C407EBA29C7803100538088 /* CGCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB129DB29C764DE005459AD /* CGCore.framework */; };
+		9C407EBB29C7803100538088 /* CGCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB129DB29C764DE005459AD /* CGCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB1299429C75BE7005459AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB1299329C75BE7005459AD /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9C849EE329AD52D00042DBF2 /* CopyFiles */ = {
+		9C407EBC29C7803100538088 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9C407EBB29C7803100538088 /* CGCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB1298E29C75BE7005459AD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -28,89 +36,67 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9C580FED29B4E355004BF1DB /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
-		9C580FEF29B4EAA3004BF1DB /* Point3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point3.swift; sourceTree = "<group>"; };
-		9C580FF229B4EEA3004BF1DB /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
-		9C580FF429B4F036004BF1DB /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		9C580FF629B4F06C004BF1DB /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
-		9C849EE529AD52D00042DBF2 /* CGConsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CGConsole; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C849EE829AD52D00042DBF2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9CB1299029C75BE7005459AD /* CGConsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CGConsole; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB1299329C75BE7005459AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9CB129DB29C764DE005459AD /* CGCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CGCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C849EE229AD52D00042DBF2 /* Frameworks */ = {
+		9CB1298D29C75BE7005459AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C407EBA29C7803100538088 /* CGCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9C580FEB29B4E330004BF1DB /* Core */ = {
+		9CB1298729C75BE7005459AD = {
 			isa = PBXGroup;
 			children = (
-				9C580FF129B4EE87004BF1DB /* Objects */,
-				9C580FEC29B4E33F004BF1DB /* Structures */,
-				9C580FF429B4F036004BF1DB /* Camera.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		9C580FEC29B4E33F004BF1DB /* Structures */ = {
-			isa = PBXGroup;
-			children = (
-				9C580FED29B4E355004BF1DB /* Vector3.swift */,
-				9C580FEF29B4EAA3004BF1DB /* Point3.swift */,
-				9C580FF629B4F06C004BF1DB /* Ray.swift */,
-			);
-			path = Structures;
-			sourceTree = "<group>";
-		};
-		9C580FF129B4EE87004BF1DB /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				9C580FF229B4EEA3004BF1DB /* Sphere.swift */,
-			);
-			path = Objects;
-			sourceTree = "<group>";
-		};
-		9C849EDC29AD52D00042DBF2 = {
-			isa = PBXGroup;
-			children = (
-				9C580FEB29B4E330004BF1DB /* Core */,
-				9C849EE729AD52D00042DBF2 /* CGConsole */,
-				9C849EE629AD52D00042DBF2 /* Products */,
+				9CB1299229C75BE7005459AD /* CGConsole */,
+				9CB1299129C75BE7005459AD /* Products */,
+				9CB129DA29C764DE005459AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		9C849EE629AD52D00042DBF2 /* Products */ = {
+		9CB1299129C75BE7005459AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C849EE529AD52D00042DBF2 /* CGConsole */,
+				9CB1299029C75BE7005459AD /* CGConsole */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C849EE729AD52D00042DBF2 /* CGConsole */ = {
+		9CB1299229C75BE7005459AD /* CGConsole */ = {
 			isa = PBXGroup;
 			children = (
-				9C849EE829AD52D00042DBF2 /* main.swift */,
+				9CB1299329C75BE7005459AD /* main.swift */,
 			);
 			path = CGConsole;
+			sourceTree = "<group>";
+		};
+		9CB129DA29C764DE005459AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CB129DB29C764DE005459AD /* CGCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C849EE429AD52D00042DBF2 /* CGConsole */ = {
+		9CB1298F29C75BE7005459AD /* CGConsole */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C849EEC29AD52D00042DBF2 /* Build configuration list for PBXNativeTarget "CGConsole" */;
+			buildConfigurationList = 9CB1299729C75BE7005459AD /* Build configuration list for PBXNativeTarget "CGConsole" */;
 			buildPhases = (
-				9C849EE129AD52D00042DBF2 /* Sources */,
-				9C849EE229AD52D00042DBF2 /* Frameworks */,
-				9C849EE329AD52D00042DBF2 /* CopyFiles */,
+				9CB1298C29C75BE7005459AD /* Sources */,
+				9CB1298D29C75BE7005459AD /* Frameworks */,
+				9CB1298E29C75BE7005459AD /* CopyFiles */,
+				9C407EBC29C7803100538088 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,25 +104,25 @@
 			);
 			name = CGConsole;
 			productName = CGConsole;
-			productReference = 9C849EE529AD52D00042DBF2 /* CGConsole */;
+			productReference = 9CB1299029C75BE7005459AD /* CGConsole */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9C849EDD29AD52D00042DBF2 /* Project object */ = {
+		9CB1298829C75BE7005459AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					9C849EE429AD52D00042DBF2 = {
+					9CB1298F29C75BE7005459AD = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 9C849EE029AD52D00042DBF2 /* Build configuration list for PBXProject "CGConsole" */;
+			buildConfigurationList = 9CB1298B29C75BE7005459AD /* Build configuration list for PBXProject "CGConsole" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,34 +130,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 9C849EDC29AD52D00042DBF2;
-			productRefGroup = 9C849EE629AD52D00042DBF2 /* Products */;
+			mainGroup = 9CB1298729C75BE7005459AD;
+			productRefGroup = 9CB1299129C75BE7005459AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C849EE429AD52D00042DBF2 /* CGConsole */,
+				9CB1298F29C75BE7005459AD /* CGConsole */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9C849EE129AD52D00042DBF2 /* Sources */ = {
+		9CB1298C29C75BE7005459AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C580FEE29B4E355004BF1DB /* Vector3.swift in Sources */,
-				9C580FF529B4F036004BF1DB /* Camera.swift in Sources */,
-				9C580FF729B4F06C004BF1DB /* Ray.swift in Sources */,
-				9C580FF029B4EAA3004BF1DB /* Point3.swift in Sources */,
-				9C580FF329B4EEA3004BF1DB /* Sphere.swift in Sources */,
-				9C849EE929AD52D00042DBF2 /* main.swift in Sources */,
+				9CB1299429C75BE7005459AD /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9C849EEA29AD52D00042DBF2 /* Debug */ = {
+		9CB1299529C75BE7005459AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		9C849EEB29AD52D00042DBF2 /* Release */ = {
+		9CB1299629C75BE7005459AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,7 +265,7 @@
 			};
 			name = Release;
 		};
-		9C849EED29AD52D00042DBF2 /* Debug */ = {
+		9CB1299829C75BE7005459AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -295,7 +276,7 @@
 			};
 			name = Debug;
 		};
-		9C849EEE29AD52D00042DBF2 /* Release */ = {
+		9CB1299929C75BE7005459AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -309,25 +290,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C849EE029AD52D00042DBF2 /* Build configuration list for PBXProject "CGConsole" */ = {
+		9CB1298B29C75BE7005459AD /* Build configuration list for PBXProject "CGConsole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C849EEA29AD52D00042DBF2 /* Debug */,
-				9C849EEB29AD52D00042DBF2 /* Release */,
+				9CB1299529C75BE7005459AD /* Debug */,
+				9CB1299629C75BE7005459AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C849EEC29AD52D00042DBF2 /* Build configuration list for PBXNativeTarget "CGConsole" */ = {
+		9CB1299729C75BE7005459AD /* Build configuration list for PBXNativeTarget "CGConsole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C849EED29AD52D00042DBF2 /* Debug */,
-				9C849EEE29AD52D00042DBF2 /* Release */,
+				9CB1299829C75BE7005459AD /* Debug */,
+				9CB1299929C75BE7005459AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9C849EDD29AD52D00042DBF2 /* Project object */;
+	rootObject = 9CB1298829C75BE7005459AD /* Project object */;
 }
