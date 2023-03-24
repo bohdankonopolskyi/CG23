@@ -31,7 +31,7 @@ public class Camera {
         self.fieldOfView = fieldOfView
         
         let tetha = fieldOfView * Float.pi / 180
-        let h = tan(tetha)
+        let h = abs(tan(tetha))
         let viewPortHeight = 2.0 * h
         let viewPortWidth = (aspectRatio.width / aspectRatio.height) * viewPortHeight
         

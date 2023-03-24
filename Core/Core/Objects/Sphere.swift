@@ -27,7 +27,7 @@ public struct Sphere {
 extension Sphere: ObjectProtocol {
     
     public func normal(at point: Vector3) -> Vector3 {
-        return (point - center).normalized()
+        return (center - point).normalized()
     }
     
     public func intersects(with ray: Ray) -> Float? {
@@ -44,7 +44,12 @@ extension Sphere: ObjectProtocol {
             let t1 = (-b - sqrt(discriminant)) / (2 * a)
             let t2 = (-b + sqrt(discriminant)) / (2 * a)
             
-            return Float.minimum(t1, t2)
+            let t = Float.minimum(t1, t2)
+            
+            if t < 0 {
+                return nil
+            }
+            return t
         }
         return nil
     }

@@ -30,19 +30,6 @@ extension Plane: ObjectProtocol {
         return normal.normalized()
     }
     
-    //    func hit(ray: Ray) -> Float? {
-    //        let denominator = normal.dot(ray.direction)
-    //        if abs(denominator) < 1e-6 {
-    //            return nil
-    //        }
-    //        let numerator = normal.dot(point - ray.origin)
-    //        let t = numerator / denominator
-    //        if t < 0 {
-    //            return nil
-    //        }
-    //        return ta
-    //    }
-    
     public func intersects(with ray: Ray) -> Float? {
         let numerator = self.normal.dot(ray.origin - self.point)
         let denominator = self.normal.dot(ray.direction)

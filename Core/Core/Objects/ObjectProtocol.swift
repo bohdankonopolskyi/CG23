@@ -15,6 +15,6 @@ public protocol ObjectProtocol {
 
 extension ObjectProtocol {
     public func reflects(lightRay: Vector3, at surfacePoint: Vector3) -> Float {
-        return lightRay.dot(normal(at: surfacePoint))
+        return normal(at: surfacePoint).dot(lightRay)
     }
 }

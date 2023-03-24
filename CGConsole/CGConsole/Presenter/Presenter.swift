@@ -2,7 +2,7 @@
 //  Presenter.swift
 //  CGConsole
 //
-//  Created by Богдан Конопольський on 24.03.2023.
+//  Created by Богдан Конопольський on 15.03.2023.
 //
 
 import Foundation
@@ -29,7 +29,6 @@ struct Presenter: PresenterProtocol {
                 default:
                     filler = "#  "
                 }
-                
                 print(filler, terminator: " ")
             }
             print("\n")

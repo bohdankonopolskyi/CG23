@@ -56,7 +56,7 @@ public class RayTracer {
 
 extension RayTracer: RayTracerProtocol {
     public func trace() -> Array<Array<Float>> {
-        var image = Array(repeating: Array(repeating: Float(0), count: imageWidth), count: imageHeight)
+        var image = Array(repeating: Array(repeating: Float(-1), count: imageWidth), count: imageHeight)
         
         for y in 0..<imageHeight {
             for x in (0..<imageWidth).reversed() {
