@@ -7,11 +7,11 @@
 
 import Foundation
 
-public protocol RendererProtocol {
-    func render() -> Array<Array<Float>>
+public protocol RayTracerProtocol {
+    func trace() -> Array<Array<Float>>
 }
 
-public class Renderer {
+public class RayTracer {
     
     //MARK: - Properties
     
@@ -54,8 +54,8 @@ public class Renderer {
 
 //MARK: - Public methods
 
-extension Renderer: RendererProtocol {
-    public func render() -> Array<Array<Float>> {
+extension RayTracer: RayTracerProtocol {
+    public func trace() -> Array<Array<Float>> {
         var image = Array(repeating: Array(repeating: Float(0), count: imageWidth), count: imageHeight)
         
         for y in 0..<imageHeight {
@@ -71,7 +71,7 @@ extension Renderer: RendererProtocol {
                     
                     let point = castRay.pointAt(t: t)
                     
-                    image[y][x] = object.reflects(lightRay: scene.lights[0].ray, at: point) ?? 0
+                    image[y][x] = object.reflects(lightRay: scene.light, at: point) 
                 }
             }
         }

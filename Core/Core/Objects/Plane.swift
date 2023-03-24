@@ -11,16 +11,14 @@ public struct Plane {
     
     //MARK: - Properties
     
-    let point: Vector3
-    let normal: Vector3
-    public var material: Material
+    public var point: Vector3
+    public var normal: Vector3
     
     //MARK: - Initialization
     
-    public init(point: Vector3, normal: Vector3, material: Material) {
+    public init(point: Vector3, normal: Vector3) {
         self.point = point
         self.normal = normal.normalized()
-        self.material = material
     }
 }
 
@@ -29,7 +27,7 @@ public struct Plane {
 extension Plane: ObjectProtocol {
     
     public func normal(at point: Vector3) -> Vector3 {
-        return self.normal
+        return normal.normalized()
     }
     
     //    func hit(ray: Ray) -> Float? {
@@ -42,7 +40,7 @@ extension Plane: ObjectProtocol {
     //        if t < 0 {
     //            return nil
     //        }
-    //        return t
+    //        return ta
     //    }
     
     public func intersects(with ray: Ray) -> Float? {

@@ -11,18 +11,16 @@ public struct Disk {
     
     //MARK: - Properties
     
-    let center: Vector3
-    let normal: Vector3
-    let radius: Float
-    public var material: Material
+    public var center: Vector3
+    public var normal: Vector3
+    public var radius: Float
     
     //MARK: - Initialization
     
-    public init(center: Vector3, normal: Vector3, radius: Float, material: Material) {
+    public init(center: Vector3, normal: Vector3, radius: Float) {
         self.center = center
         self.normal = normal.normalized()
         self.radius = radius
-        self.material = material
     }
 }
 

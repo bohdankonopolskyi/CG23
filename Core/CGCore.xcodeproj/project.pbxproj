@@ -12,15 +12,13 @@
 		9C407EA929C77EB400538088 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C407E9D29C77EB400538088 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C407EB329C77EC600538088 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EB229C77EC600538088 /* Vector3.swift */; };
 		9C407EB529C77F1500538088 /* Point3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EB429C77F1500538088 /* Point3.swift */; };
-		9C407EBF29C7816600538088 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EBE29C7816600538088 /* Material.swift */; };
 		9C407EC229C7822000538088 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EC129C7822000538088 /* Sphere.swift */; };
 		9C407EC429C7829800538088 /* ObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EC329C7829800538088 /* ObjectProtocol.swift */; };
-		9C407EE729C7833700538088 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EE429C7833700538088 /* Light.swift */; };
 		9C407EE829C7833700538088 /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EE529C7833700538088 /* Disk.swift */; };
 		9C407EE929C7833700538088 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EE629C7833700538088 /* Plane.swift */; };
 		9C407EEF29C7845F00538088 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EEB29C7845F00538088 /* Ray.swift */; };
 		9C407EF029C7845F00538088 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EEC29C7845F00538088 /* Camera.swift */; };
-		9C407EF129C7845F00538088 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EED29C7845F00538088 /* Renderer.swift */; };
+		9C407EF129C7845F00538088 /* RayTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EED29C7845F00538088 /* RayTracer.swift */; };
 		9C407EF229C7845F00538088 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407EEE29C7845F00538088 /* Scene.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,15 +39,13 @@
 		9C407EA729C77EB400538088 /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
 		9C407EB229C77EC600538088 /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
 		9C407EB429C77F1500538088 /* Point3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point3.swift; sourceTree = "<group>"; };
-		9C407EBE29C7816600538088 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		9C407EC129C7822000538088 /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
 		9C407EC329C7829800538088 /* ObjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectProtocol.swift; sourceTree = "<group>"; };
-		9C407EE429C7833700538088 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
 		9C407EE529C7833700538088 /* Disk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disk.swift; sourceTree = "<group>"; };
 		9C407EE629C7833700538088 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		9C407EEB29C7845F00538088 /* Ray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
 		9C407EEC29C7845F00538088 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		9C407EED29C7845F00538088 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		9C407EED29C7845F00538088 /* RayTracer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RayTracer.swift; sourceTree = "<group>"; };
 		9C407EEE29C7845F00538088 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +110,6 @@
 			children = (
 				9C407EB229C77EC600538088 /* Vector3.swift */,
 				9C407EB429C77F1500538088 /* Point3.swift */,
-				9C407EBE29C7816600538088 /* Material.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -123,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				9C407EE529C7833700538088 /* Disk.swift */,
-				9C407EE429C7833700538088 /* Light.swift */,
 				9C407EE629C7833700538088 /* Plane.swift */,
 				9C407EC129C7822000538088 /* Sphere.swift */,
 				9C407EC329C7829800538088 /* ObjectProtocol.swift */,
@@ -136,7 +130,7 @@
 			children = (
 				9C407EEC29C7845F00538088 /* Camera.swift */,
 				9C407EEB29C7845F00538088 /* Ray.swift */,
-				9C407EED29C7845F00538088 /* Renderer.swift */,
+				9C407EED29C7845F00538088 /* RayTracer.swift */,
 				9C407EEE29C7845F00538088 /* Scene.swift */,
 			);
 			path = Tracer;
@@ -253,10 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C407EE829C7833700538088 /* Disk.swift in Sources */,
-				9C407EE729C7833700538088 /* Light.swift in Sources */,
 				9C407EB529C77F1500538088 /* Point3.swift in Sources */,
-				9C407EBF29C7816600538088 /* Material.swift in Sources */,
-				9C407EF129C7845F00538088 /* Renderer.swift in Sources */,
+				9C407EF129C7845F00538088 /* RayTracer.swift in Sources */,
 				9C407EC429C7829800538088 /* ObjectProtocol.swift in Sources */,
 				9C407EC229C7822000538088 /* Sphere.swift in Sources */,
 				9C407EF029C7845F00538088 /* Camera.swift in Sources */,

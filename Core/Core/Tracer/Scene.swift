@@ -11,13 +11,22 @@ public class Scene {
     
     //MARK: - Properties
     
-    var objects: [ObjectProtocol] = []
-    var lights: [Light] = []
+    private var lightVector: Vector3
+    public var objects: [ObjectProtocol] = []
+    public var light: Vector3 {
+        get {
+            return self.lightVector
+        }
+        
+        set {
+            lightVector = newValue.normalized()
+        }
+    }
     
     //MARK: - Initialization
     
-    public init(objects: [ObjectProtocol], lights: [Light]) {
+    public init(objects: [ObjectProtocol], light: Vector3) {
         self.objects = objects
-        self.lights = lights
+        self.lightVector = light.normalized()
     }
 }

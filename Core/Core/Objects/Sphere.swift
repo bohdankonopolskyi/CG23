@@ -13,14 +13,12 @@ public struct Sphere {
     
     public var center: Vector3
     public var radius: Float
-    public var material: Material
     
     //MARK: - Initialization
     
-    public init(center: Vector3, radius: Float, material: Material) {
+    public init(center: Vector3, radius: Float) {
         self.center = center
         self.radius = radius
-        self.material = material
     }
 }
 
@@ -29,7 +27,7 @@ public struct Sphere {
 extension Sphere: ObjectProtocol {
     
     public func normal(at point: Vector3) -> Vector3 {
-        return (point - self.center).normalized()
+        return (point - center).normalized()
     }
     
     public func intersects(with ray: Ray) -> Float? {

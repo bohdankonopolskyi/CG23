@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C407EBA29C7803100538088 /* CGCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB129DB29C764DE005459AD /* CGCore.framework */; };
 		9C407EBB29C7803100538088 /* CGCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB129DB29C764DE005459AD /* CGCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C5D854029CDA8F3000373F5 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5D853F29CDA8F3000373F5 /* Presenter.swift */; };
 		9CB1299429C75BE7005459AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB1299329C75BE7005459AD /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C5D853F29CDA8F3000373F5 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		9CB1299029C75BE7005459AD /* CGConsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CGConsole; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB1299329C75BE7005459AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9CB129DB29C764DE005459AD /* CGCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CGCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C5D853E29CDA8D9000373F5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C5D853F29CDA8F3000373F5 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		9CB1298729C75BE7005459AD = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		9CB1299229C75BE7005459AD /* CGConsole */ = {
 			isa = PBXGroup;
 			children = (
+				9C5D853E29CDA8D9000373F5 /* Presenter */,
 				9CB1299329C75BE7005459AD /* main.swift */,
 			);
 			path = CGConsole;
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5D854029CDA8F3000373F5 /* Presenter.swift in Sources */,
 				9CB1299429C75BE7005459AD /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

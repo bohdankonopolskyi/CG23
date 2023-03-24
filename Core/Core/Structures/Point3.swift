@@ -11,9 +11,9 @@ public struct Point3 {
     
     //MARK: - Properties
     
-    public var x: Float
-    public var y: Float
-    public var z: Float
+    public let x: Float
+    public let y: Float
+    public let z: Float
     
     //MARK: - Initialization
     
@@ -23,6 +23,7 @@ public struct Point3 {
         self.z = z
     }
 }
+
 //MARK: - Operators
 
 public extension Point3 {

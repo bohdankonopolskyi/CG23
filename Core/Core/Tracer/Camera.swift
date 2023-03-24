@@ -17,11 +17,11 @@ public class Camera {
     //MARK: - Properties
     
     public let origin: Vector3
-    public let direction: Vector3
-    public let fieldOfView: Float
-    public let lowerLeftCorner: Vector3
-    public let horizontal: Vector3
-    public let vertical: Vector3
+    private let direction: Vector3
+    private let fieldOfView: Float
+    private let lowerLeftCorner: Vector3
+    private let horizontal: Vector3
+    private let vertical: Vector3
     
     //MARK: - Initialization
     
@@ -49,7 +49,8 @@ public class Camera {
 
 //MARK: - Public methods
 
-extension Camera: CameraProtocol {
+extension Camera: CameraProtocol
+{
     public func getRay(u: Float, v: Float) -> Ray {
         return Ray(origin: origin, direction: lowerLeftCorner + horizontal * u + vertical * v - origin)
     }
