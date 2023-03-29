@@ -3,7 +3,7 @@
 //  CGConsole
 //
 //  Created by Богдан Конопольський on 19.03.2023.
-//
+//  Contributed by StefanErrorerko
 
 import Foundation
 import CGCore
