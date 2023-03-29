@@ -64,5 +64,15 @@ final class CoreTests: XCTestCase {
 
         XCTAssertNotEqual(image1, image2)
     }
-
+    
+    func testNegativeRadius() throws {
+        do {
+            let sphere: ObjectProtocol = try Sphere(center: Vector3(x: 0, y: 0, z: 4), radius: -3)
+            let disk: ObjectProtocol = try Disk(center: Vector3(x: 0, y: 0, z: 1), normal: Vector3(start: Point3(x: 0, y: 0, z: 5), end: Point3(x: 0, y: 0, z: 7)), radius: -0.5)
+            XCTFail("No check on radius negativeness.")
+        }
+        catch {
+            return   
+        }
+    }
 }
