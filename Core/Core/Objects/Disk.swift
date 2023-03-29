@@ -9,9 +9,9 @@ import Foundation
 
 public struct Disk {
     
-    //MARK: - Errors
+    //MARK: - Enum
     
-    enum SphereError: Error {
+    enum DiskError: Error {
         case NegativeRadius
     }
     
@@ -27,7 +27,7 @@ public struct Disk {
         self.center = center
         self.normal = normal.normalized()
         if radius < 0 {
-            throw SphereError.NegativeRadius
+            throw DiskError.NegativeRadius
         }
         self.radius = radius
     }
