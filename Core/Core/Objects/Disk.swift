@@ -3,11 +3,17 @@
 //  CGConsole
 //
 //  Created by Богдан Конопольський on 06.03.2023.
-//
+//  Contributed by StefanErrorerko
 
 import Foundation
 
 public struct Disk {
+    
+    //MARK: - Errors
+    
+    enum SphereError: Error {
+        case NegativeRadius
+    }
     
     //MARK: - Properties
     
@@ -17,9 +23,12 @@ public struct Disk {
     
     //MARK: - Initialization
     
-    public init(center: Vector3, normal: Vector3, radius: Float) {
+    public init(center: Vector3, normal: Vector3, radius: Float) throws {
         self.center = center
         self.normal = normal.normalized()
+        if radius < 0 {
+            throw SphereError.NegativeRadius
+        }
         self.radius = radius
     }
 }
