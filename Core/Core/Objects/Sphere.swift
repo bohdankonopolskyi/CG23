@@ -3,11 +3,17 @@
 //  CGConsole
 //
 //  Created by Богдан Конопольський on 05.03.2023.
-//
+//  Contibuted by StefanErrorerko
 
 import Foundation
 
 public struct Sphere {
+    
+    //MARK: - Enum
+    
+    enum SphereError: Error {
+        case NegativeRadius
+    }
     
     //MARK: - Properties
     
@@ -16,8 +22,11 @@ public struct Sphere {
     
     //MARK: - Initialization
     
-    public init(center: Vector3, radius: Float) {
+    public init(center: Vector3, radius: Float) throws {
         self.center = center
+        if radius < 0 {
+            throw SphereError.NegativeRadius
+        }
         self.radius = radius
     }
 }
