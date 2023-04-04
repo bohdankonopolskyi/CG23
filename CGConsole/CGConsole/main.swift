@@ -9,8 +9,9 @@ import Foundation
 import CGCore
 
 
-let imageWidth = 40
-
+var imageWidth = 40
+imageWidth = 50
+imageWidth = 60
 do {
   let camera: CameraProtocol = Camera(origin: Vector3(x: 0, y: 0, z: 0), direction: Vector3(x: 0, y: 0, z: 1), top: Vector3(x: 0, y: 1, z: 0), fieldOfView: 60, aspectRatio: (width: 16.0, height: 9.0))
 
@@ -24,7 +25,7 @@ do {
   let image = rayTracer.trace()
 
   Presenter.present(image: image)
-
+    Presenter.present(image: image)
   exit(0)
 }
 catch {
